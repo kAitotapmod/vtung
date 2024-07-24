@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+}
+header {
+    background-color: #3F3567;
+    color: rgb(33, 105, 238);
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    background-color: #000000;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.featured {
+    background-color: #252525;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% - 4rem);
+}
+.slides {
+    display: flex;
+}
+.slide {
+    min-width: 12.5%; /* 100% / 8 items per row */
+    box-sizing: border-box;
+    text-align: center;
+}
+.slide img {
+    width: 100%;
+    border-radius: 5px;
+}
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+button.prev {
+    left: 0;
+}
+button.next {
+    right: 0;
+}
+.manga-list {
+    background-color: #252525;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 2px solid white;
+}
+.manga-item {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.manga-item img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 2px solid white;
+}
+.manga-item div {
+    flex: 1;
+}
+.anhfeatured {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.anhfeatured img {
+    width: 160px;
+    height: 240px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 2px solid white;
+}
+.anhfeatured div {
+    flex: 1;
+}
