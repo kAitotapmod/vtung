@@ -6,13 +6,45 @@ body {
 }
 header {
     background-color: #3F3567;
-    color: rgb(33, 105, 238);
-    padding: 1rem;
-    text-align: center;
+    padding: 0.1rem;
+}
+header input{
+    margin-left: 580px;
+    position: relative;
+    top:-14px;
+}
+.search-field {
+    width: 25%;
+    padding: 10px 35px 10px 15px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -330px; /* Đặt nút tìm kiếm vào góc phải */
+    cursor: pointer;
+}
+.search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    position: relative;
+    top:-10px;
+    left: -30px;
+}
+
+header img{
+    scale: 1.4;
+    margin-left: 320px;
+    position: relative;
+    top: 20px;
 }
 nav {
     background-color: #000000;
-    padding: 0.5rem;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -33,6 +65,13 @@ nav a {
     border-radius: 5px;
     border: 2px solid #ffffff;
     color: #ffffff;
+}
+.featured h3{
+    margin-right: 20px;
+}
+.featured h2{
+    margin-left: 20px;
+    color: orangered;
 }
 .slider-container {
     position: relative;
@@ -92,6 +131,7 @@ button.next {
     object-fit: cover;
     margin-right: 1rem;
     border: 2px solid white;
+    border-radius: 4px;
 }
 .manga-item div {
     flex: 1;
